@@ -64,7 +64,7 @@ export default function Register() {
     try {
       // 🔹 Envia os dados para a API de registo
       const { data } = await axios.post(
-        `${API_URL}api/register`,
+        `${API_URL}/api/register`,
         { username: formData.email, password: formData.password },
         { headers: { "Content-Type": "application/json" } }
       );
